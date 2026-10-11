@@ -582,3 +582,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .partner-points span { font-size: 16px; }
   .hero-sub br { display: none; }
 }
+
+.history li > div p { font-size: 20px; font-weight: 600; color: #fff; }
+.history small { display: block; margin-top: 8px; font-size: 16px; line-height: 1.6; color: rgba(255,255,255,.6); }
+.history li:nth-last-child(2) b { color: var(--purple); }
+@media (max-width: 768px) { .history li > div p { font-size: 17px; } .history small { font-size: 14.5px; } }

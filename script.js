@@ -2,15 +2,15 @@
 // name: 매장명, addr: 주소·지역(없으면 비워 둠), hq: 사무실 여부
 // photo: 매장 사진 경로 (예: "assets/stores/jeungpyeong.jpg"). 비워 두면 사진 없이 표시됩니다.
 const STORES = [
-  { name: "본사 (사무실점)", addr: "충북 증평군 증평읍 중앙로 207-2, KT증평지사 2층", hq: true, photo: "" },
-  { name: "증평점", addr: "충북 증평군", photo: "assets/stores/jeungpyeong.jpg" },
-  { name: "중앙로점", addr: "충북 증평군 증평읍 중앙로 207-2, KT증평지사 1층", photo: "assets/stores/jungangro.jpg" },
+  { name: "본사 (사무실점)", addr: "충북 증평군 증평읍, KT증평지사 2층", hq: true, photo: "" },
+  { name: "증평점", addr: "충북 증평군 증평읍 중앙로 207-2, 1층", photo: "assets/stores/jeungpyeong.jpg" },
+  { name: "중앙로점", addr: "충북 증평군 증평읍, KT증평지사 1층", photo: "assets/stores/jungangro.jpg" },
   { name: "진천점", addr: "충북 진천군", photo: "assets/stores/jincheon.jpg" },
   { name: "괴산점", addr: "충북 괴산군", photo: "assets/stores/goesan.jpg" },
   { name: "음성점", addr: "충북 음성군", photo: "assets/stores/eumseong.jpg" },
   { name: "금왕점", addr: "충북 음성군", photo: "assets/stores/geumwang.jpg" },
-  { name: "대소점", addr: "충북 음성군", photo: "assets/stores/daeso.jpg" },
-  { name: "용산점", addr: "충북 충주시", photo: "" },
+  { name: "대소점", addr: "충북 음성군 대소면 오태로 91, 1층", photo: "assets/stores/daeso.jpg" },
+  { name: "용산점", addr: "충북 충주시 형설로 90", photo: "" },
   { name: "율량점", addr: "충북 청주시", photo: "assets/stores/yullyang.jpg" },
   { name: "당진점", addr: "충남 당진시", photo: "" },
   { name: "내포점", addr: "충남 내포신도시", photo: "" },
