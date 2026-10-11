@@ -548,3 +548,37 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .contact .contact-grid { padding: 40px 26px; border-radius: 24px; }
   .contact { padding-bottom: 72px; }
 }
+
+/* ---------- KT 파트너 ---------- */
+.kt-badge { display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px 5px 9px; background: #fff; color: var(--ink); box-shadow: 0 0 0 1px rgba(0,0,0,.08); }
+.kt-badge img { height: 17px; width: auto; display: block; }
+
+.partner { background: linear-gradient(180deg, #fff 0%, #fff4f2 100%); }
+.partner-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 88px; align-items: center; }
+.lockup { background: #fff; border-radius: 36px; padding: 72px 48px 44px; text-align: center; box-shadow: 0 30px 80px rgba(237, 32, 36, .16); position: relative; overflow: hidden; }
+.lockup::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 8px; background: var(--grad-red); }
+.lockup-logos { display: flex; align-items: center; justify-content: center; gap: 36px; }
+.lockup-logos img { height: clamp(84px, 9vw, 132px); width: auto; }
+.lockup-logos span { font-size: 40px; font-weight: 300; color: var(--ink-3); }
+.lockup p { margin-top: 44px; font-size: 15px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--red); }
+.partner-desc { margin-top: 28px; font-size: 19px; line-height: 1.8; color: var(--ink-2); }
+.partner-points { margin-top: 40px; border-top: 2px solid var(--red); }
+.partner-points li { display: grid; grid-template-columns: 130px 1fr; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.partner-points b { font-size: 17px; color: var(--red); }
+.partner-points span { font-size: 18px; font-weight: 600; }
+
+@media (max-width: 1024px) {
+  .partner-grid { grid-template-columns: 1fr; gap: 56px; }
+}
+@media (max-width: 768px) {
+  .kt-badge { padding: 4px 9px 4px 7px; gap: 5px; }
+  .kt-badge img { height: 14px; }
+  .lockup { padding: 52px 24px 32px; border-radius: 26px; }
+  .lockup-logos { gap: 22px; }
+  .lockup-logos span { font-size: 28px; }
+  .lockup p { margin-top: 30px; font-size: 13px; }
+  .partner-desc { font-size: 16.5px; }
+  .partner-points li { grid-template-columns: 96px 1fr; }
+  .partner-points span { font-size: 16px; }
+  .hero-sub br { display: none; }
+}
