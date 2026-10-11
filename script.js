@@ -1,5 +1,6 @@
 // 매장 정보: 이 배열만 수정하면 '매장안내' 섹션에 반영됩니다.
 // name: 매장명, addr: 주소·지역(없으면 비워 둠), hq: 사무실 여부
+// pos: 사진이 카드 비율과 다를 때 보여줄 위치 (예: "center 12%")
 // photo: 매장 사진 경로 (예: "assets/stores/jeungpyeong.jpg"). 비워 두면 사진 없이 표시됩니다.
 const STORES = [
   { name: "본사 (사무실점)", addr: "충북 증평군 증평읍, KT증평지사 2층", hq: true, photo: "assets/stores/office.webp" },
@@ -13,7 +14,7 @@ const STORES = [
   { name: "용산점", addr: "충북 충주시 형설로 90", photo: "assets/stores/yongsan.jpg" },
   { name: "율량점", addr: "충북 청주시", photo: "assets/stores/yullyang.jpg" },
   { name: "당진점", addr: "충남 당진시", photo: "assets/stores/dangjin.webp" },
-  { name: "내포점", addr: "충남 내포신도시", photo: "" },
+  { name: "내포점", addr: "충남 내포신도시", photo: "assets/stores/naepo.webp", pos: "center 12%" },
 ];
 
 document.documentElement.classList.add("js");
@@ -36,6 +37,7 @@ STORES.forEach((s, i) => {
     img.src = s.photo;
     img.alt = "KT 에이플러스 " + s.name;
     img.loading = "lazy";
+    if (s.pos) img.style.objectPosition = s.pos; // 세로 사진은 보여줄 위치를 지정
     el.appendChild(img);
   }
   const h = document.createElement("h3");
