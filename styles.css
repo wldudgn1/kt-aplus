@@ -603,3 +603,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .value strong { display: block; font-size: 18px; font-weight: 700; letter-spacing: -.02em; color: var(--red); margin-bottom: 14px; }
 .value:nth-child(2) strong { color: #8b3fe0; }
 .value:nth-child(3) strong { color: #009e90; }
+
+/* ---------- 하단 신뢰 표시 ---------- */
+.trust { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 32px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.15); }
+.trust-item { display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px; border-radius: 12px; border: 1px solid rgba(255,255,255,.22); color: #fff; line-height: 1.3; transition: border-color .3s, background .3s; }
+a.trust-item:hover { border-color: #fff; background: rgba(255,255,255,.06); }
+.trust-item b { display: block; font-size: 14.5px; font-weight: 700; }
+.trust-item small { display: block; font-size: 12px; color: rgba(255,255,255,.55); margin-top: 2px; }
+.trust-item.is-kt { background: #fff; border-color: #fff; color: var(--ink); }
+.trust-item.is-kt small { color: var(--ink-3); }
+.trust-item img { height: 26px; width: auto; }
+.trust p { flex-basis: 100%; margin-top: 6px; font-size: 13px; color: rgba(255,255,255,.5); }
+@media (max-width: 768px) { .trust-item { width: 100%; } }
