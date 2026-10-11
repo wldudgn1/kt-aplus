@@ -10,7 +10,7 @@ const STORES = [
   { name: "음성점", addr: "충북 음성군", photo: "assets/stores/eumseong.jpg" },
   { name: "금왕점", addr: "충북 음성군", photo: "assets/stores/geumwang.jpg" },
   { name: "대소점", addr: "충북 음성군 대소면 오태로 91, 1층", photo: "assets/stores/daeso.jpg" },
-  { name: "용산점", addr: "충북 충주시 형설로 90", photo: "" },
+  { name: "용산점", addr: "충북 충주시 형설로 90", photo: "assets/stores/yongsan.jpg" },
   { name: "율량점", addr: "충북 청주시", photo: "assets/stores/yullyang.jpg" },
   { name: "당진점", addr: "충남 당진시", photo: "" },
   { name: "내포점", addr: "충남 내포신도시", photo: "" },
