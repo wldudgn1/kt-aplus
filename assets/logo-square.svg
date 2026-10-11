@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 208" role="img" aria-label="에이플러스 로고">
+  <defs>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0442"/>
+      <stop offset=".3" stop-color="#1f3385"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="208" height="208"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <!-- 빨간 가로 막대 + 사선 -->
+    <polygon points="55,117 208,117 208,152 41.3,152" fill="#e70012"/>
+    <polygon points="103.2,0 141.5,0 222.6,208 184.3,208" fill="#e70012"/>
+    <!-- 파란 A -->
+    <polygon points="53,0 90.5,0 171.5,208 133.7,208" fill="url(#shade)"/>
+    <polygon points="50.8,0 89.6,0 8.5,208 -30.3,208" fill="#1f3385"/>
+  </g>
+</svg>
